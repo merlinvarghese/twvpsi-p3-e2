@@ -8,6 +8,8 @@ class EventProbability {
     }
 
     public boolean equals(Object event) {
+        if (!(event instanceof EventProbability))
+            return false;
         return (this.occurrence == ((EventProbability)event).occurrence);
     }
 
